@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StoryPress – Short Story Collection</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- LEFT SIDE NAVIGATION -->
+  <aside class="side-nav">
+    <div class="brand">StoryPress</div>
+
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#stories">All Stories</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#authors">Authors</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="social">
+      <a href="#">FB</a>
+      <a href="#">IG</a>
+      <a href="#">TW</a>
+    </div>
+  </aside>
+
+  <!-- MAIN GRID LAYOUT -->
+  <div class="layout">
+    <!-- MAIN CONTENT -->
+    <main class="content">
+      <header class="page-header" id="home">
+        <h1>Short Story Collection</h1>
+        <p class="subtitle">
+          A curated anthology presented in a modern news-style layout.
+        </p>
+      </header>
+
+      <section class="story-list" id="stories">
+        <article class="story-card fade-in">
+          <h2>The Window Between Worlds</h2>
+          <p>
+            A young girl discovers a window that reveals alternate versions of
+            her life — each shaped by a single choice she never made.
+          </p>
+          <button class="read-btn" data-story="story1">Read Excerpt</button>
+        </article>
+
+        <article class="story-card fade-in">
+          <h2>The Last Letter</h2>
+          <p>
+            A forgotten letter resurfaces years later, forcing its recipient
+            to confront a past they thought was buried.
+          </p>
+          <button class="read-btn" data-story="story2">Read Excerpt</button>
+        </article>
+
+        <article class="story-card fade-in">
+          <h2>Echoes in the Alley</h2>
+          <p>
+            A detective hears whispers in an abandoned alley — whispers that
+            reveal more than they should.
+          </p>
+          <button class="read-btn" data-story="story3">Read Excerpt</button>
+        </article>
+      </section>
+      <section class="info-section app-section" id="categories">
+        <h2>Categories</h2>
+        <ul class="info-list">
+          <li>Fiction</li>
+          <li>Mystery</li>
+          <li>Drama</li>
+          <li>Romance</li>
+          <li>Sci‑Fi</li>
+        </ul>
+      </section>
+
+      <section class="info-section app-section" id="authors">
+        <h2>Authors</h2>
+        <p>Featuring works by emerging and established writers.</p>
+      </section>
+
+      <section class="info-section app-section" id="about">
+        <h2>About StoryPress</h2>
+        <p>
+          StoryPress is a curated storytelling platform dedicated to short
+          fiction, creative writing, and narrative exploration. Our mission is
+          to highlight powerful voices and compelling stories.
+        </p>
+      </section>
+
+      <section class="info-section app-section" id="contact">
+        <h2>Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:kngflowservices1@gmail.com">kngflowserves1@gmail.com</a>
+        </p>
+      </section>
+    </main>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="sidebar">
+
+      <!-- Writing Tool Ad -->
+      <div class="ad-tile">
+        <img src="https://picsum.photos/seed/grammarly/250/120" alt="Grammarly Ad" class="ad-img">
+        <h3>Grammarly Premium</h3>
+        <p>Write with confidence. Fix grammar, tone, and clarity instantly.</p>
+        <a href="#" class="ad-btn">Learn More</a>
+      </div>
+
+      <!-- Book Ad -->
+      <div class="ad-tile">
+        <img src="https://picsum.photos/seed/books/250/120" alt="Writing Books" class="ad-img">
+        <h3>Top Writing Books</h3>
+        <p>Discover the best guides for fiction, storytelling, and creativity.</p>
+        <a href="#" class="ad-btn">Shop Now</a>
+      </div>
+
+      <!-- Creative Software Ad -->
+      <div class="ad-tile">
+        <img src="https://picsum.photos/seed/scrivener/250/120" alt="Scrivener Ad" class="ad-img">
+        <h3>Scrivener</h3>
+        <p>The ultimate writing studio for authors and storytellers.</p>
+        <a href="#" class="ad-btn">Try Free</a>
+      </div>
+      <section class="newsletter">
+        <h2>Join Our Newsletter</h2>
+        <p>Get updates on new stories, featured authors, and creative insights.</p>
+
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Demo only — no data collected.');">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+
+    </aside>
+    <footer class="footer">
+      <p>© 2025 StoryPress. All rights reserved.</p>
+    </footer>
+    <button id="backToTop" class="back-to-top">↑</button>
+  </div>
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close-btn" id="closeModal">&times;</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalText"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
