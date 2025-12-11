@@ -36,9 +36,11 @@ https://github.com/kngflow-kaylee/story-collection/
 
 ---
 
-## Purpose
-
-This project is intended as a **front‑end demonstration** of layout structure, UI polish, and interactive components.  
+🎯 Purpose
+This project is intended as a front‑end demonstration of:
+- Layout structure
+- UI polish
+- Interactive components (modals, navigation, scroll behavior)
 It does not include backend functionality or real data collection.
 
 
